@@ -115,9 +115,6 @@
             </div>
             <div class="info__buttons">
               <button class="card__icon-button" type="button">
-                <!-- <svg class="like-icon" width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
-
-                <!-- <path fill="var(--accent-color)" d="M6 0H3v3h3V0ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 12H3v3h3v-3ZM9 15H6v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 21h-3v3h3v-3Z"/> -->
                 <svg
                   class="like-icon"
                   width="39"
@@ -561,29 +558,28 @@
         </li>
       </ul>
       <div class="button-block_margin">
-
-      <button
-        type="button"
-        class="button button_save"
-        onclick="window['dialog'].showModal()"
-        aria-controls="dialog"
-      >
-        <svg
-          viewBox="0 0 39 39"
-          width="39px"
-          height="39px"
-          class="button__floppy"
-          fill="currentColor"
+        <button
+          type="button"
+          class="button button_save"
+          onclick="window['dialog'].showModal()"
+          aria-controls="dialog"
         >
-          <use href="./svg/floppy.svg#floppy" />
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </div>
+          <svg
+            viewBox="0 0 39 39"
+            width="39px"
+            height="39px"
+            class="button__floppy"
+            fill="currentColor"
+          >
+            <use href="./svg/floppy.svg#floppy" />
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
 
       <dialog id="dialog" class="dialog">
         <form method="dialog" class="dialog__form">
-           <div class="dialog__paragraph"> 
+          <div class="dialog__paragraph">
             <svg
               class="dialog-floppy"
               xmlns="http://www.w3.org/2000/svg"
@@ -592,7 +588,7 @@
               <use href="./svg/floppy.svg#floppy" />
             </svg>
             <p class="dialog-text">Вставьте дискету, чтобы продолжить</p>
-           </div> 
+          </div>
           <button
             class="button dialog__button"
             onclick="window['dialog'].close()"
@@ -605,26 +601,3 @@
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-
-<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 27">
-                <use href="./svg/heart.svg#heart" />
-          </svg>  -->
-
-<!-- 
-
-      <dialog id="menu-dialog" class="dialog">
-        <div class="dialog__block">
-        <svg class="dialog__floppy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
-          <use href="./svg/floppy.svg#floppy" />
-        </svg>
-        <p class="dialog__paragraph">Вставьте
-          дискету, чтобы продолжить</p>
-      </div>
-      </dialog>
-
-    </main>
-    <footer class="footer">
-      <span class="button__text">Сохранить на память</span>
-
-    </footer> 
-    -->
