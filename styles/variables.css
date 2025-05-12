@@ -1,1 +1,31 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --inter-main-font-family: "Inter-Variable";
+    --press-head-font-family: "Press Start 2P";
+    --accent-color: #000;
+    --main-font-weight: 400;
+    --bg-color: #fff;
+    --bg-pattern: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px), linear-gradient(to bottom, #e7e7e7 0 0.01%, #1a1a1a 100%) ;
+    --title-font-weight: 700;
+    --main-font-size: 18px;
+    --head-font-size: 14px;
+    --text-color: #000;
+    --text-stroke-color: #fff;
+    --bt-text-color: #fff;
+    --dialog-floppy-width: 28px;
+    --dialog-floppy-height:28px;
+    --bt-bg-color: #fff;
+    --heart-bg-color:red;
+    --core-bg-color: #fff;
+    --contour-bg-color: #000;
+
+    /* --bg-pattern: repeating-linear-gradient(to right, var(--stripes-color-light) 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, var(--stripes-color-light) 0 2px, transparent 2px 4px), linear-gradient(to bottom, var(--gradient-start-light) 0 var(--gradient-offset-light), var(--gradient-end-light) var(--gradient-offset-light) 100%); */
+    /* --bg-pattern: linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%); */
+    
+}
+
+
+
+
+
+
