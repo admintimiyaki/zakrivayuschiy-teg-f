@@ -301,26 +301,23 @@
   margin-block-end: 100px;
 }
 
-.dialog__form {
-  display: flex;
-  flex-direction: column;
-  inline-size: 100%;
-  block-size: 100%;
-  column-gap: 18px;
-  row-gap: 30px;
-}
-
 .dialog {
   border: 2px solid var(--accent-color, #000);
-  block-size: fit-content;
-  padding-inline: clamp(28px, 44.2254px + -1.1268vw, 40px);
   padding-block: 30px;
-  inline-size: clamp(341px, 336.7746px + 1.1268vw, 353px);
+  padding-inline: 40px;
   background-color: var(--bg-color, #fff);
   transition:
     opacity 0.5s ease-out,
     transform 0.45s 0.05s linear;
-  padding: 30px 40px;
+  max-inline-size: 341px;
+}
+
+.dialog[open] {
+  display: grid;
+  grid-template-columns: 39px 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 30px 20px;
 }
 
 .dialog:not([open]) {
@@ -332,13 +329,9 @@
 .dialog__button {
   text-transform: uppercase;
   padding-block: 13px;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
   block-size: 38px;
+  grid-column-start: 1;
+  grid-column-end: span 2;
 }
 
 .dialog-floppy {
@@ -418,6 +411,10 @@
     gap: 8px;
     padding-inline: 19px;
     padding-block: 15px;
+  }
+  .dialog {
+    padding: 30px;
+    max-inline-size: 353px;
   }
   .button__floppy {
     inline-size: 21px;

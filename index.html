@@ -578,24 +578,20 @@
       </div>
 
       <dialog id="dialog" class="dialog">
-        <form method="dialog" class="dialog__form">
-          <div class="dialog__paragraph">
-            <svg
-              class="dialog-floppy"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 39 39"
-            >
-              <use href="./svg/floppy.svg#floppy" />
-            </svg>
-            <p class="dialog-text">Вставьте дискету, чтобы продолжить</p>
-          </div>
-          <button
-            class="button dialog__button"
-            onclick="window['dialog'].close()"
-          >
-            <span class="button__text uppercase">Ok</span>
-          </button>
-        </form>
+        <svg
+          class="dialog-floppy"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 39 39"
+        >
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <p class="dialog-text">Вставьте дискету, чтобы продолжить</p>
+        <button
+          class="button dialog__button"
+          onclick="window['dialog'].close()"
+        >
+          <span class="button__text uppercase">Ok</span>
+        </button>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
