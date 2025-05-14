@@ -89,6 +89,11 @@
     /* fill:var(--contour-bg-color, #000);
     --contour-bg-color: var(--accent-color,#000);  */
   }
+
+  .like-icon:hover .contour {
+    fill: var(--contour-bg-color, #000);
+    transition: fill 0.3s linear;
+  }
   
   .like-icon .main-body{
     fill: transparent;
