@@ -208,14 +208,24 @@
   inline-size: 100%;
   padding-right: 25px;
   padding-bottom: 25px;
-  /* gap: 8px;  */
+  gap: 8px;  
 }
 
 .card__icon-button {
+  /* background-color: transparent;
+  border: 2px solid transparent;
+  transition: border-color 0.3s linear;
+  block-size: 39px; */
+  padding-inline: 0;
+  padding-block: 0;
   background-color: transparent;
   border: 2px solid transparent;
   transition: border-color 0.3s linear;
-  block-size: 39px;
+  inline-size: 39px;
+  block-size: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card__icon-button:focus {
@@ -428,5 +438,9 @@
 
   .info__paragraph-block {
     padding: 30px 25px 25px 25px;
+  }
+  .info__buttons{
+    gap: 6px;
+    padding-right: 23px;
   }
 }
